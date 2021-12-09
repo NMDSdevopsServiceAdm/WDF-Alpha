@@ -1,0 +1,239 @@
+QualificationId,QualificationCode,QualificationTitle,QualificationType,AwardingBodyId,Level,Credits,IsDeleted,CreatedBy,CreatedDate,LastUpdatedBy,LastUpdatedDate,IsPartOfApprenticeship,IsPreFunded,IsEndPointAssesement,LevelForEndPointAssesement,IsLocalAuthority
+1,600/9559/3,Supporting Activity Provision in Social Care ,Level 2 Award,20,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+2,601/1061/2,Activity Provision In Social Care,Level 3 Certificate,20,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+3,600/2955/9,Activity Provision In Social Care,Level 3 Certificate,25,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+4,600/7153/9,Independent Advocacy,Level 3 Certificate,8,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+5,600/1884/7,Assisting and Moving Individuals for a Social Care Setting,Level 2 Certificate,18,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+6,601/7428/6,Assisting and Moving Individuals for a Social Care Setting,Level 2 Certificate,31,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+7,603/4453/2,Introduction to Autistic Spectrum Conditions,Level 2 Certificate,12,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+8,601/6330/6,Understanding Autism ,Level 2 Certificate,18,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+9,601/3925/0,Supporting Individuals on the Autistic Spectrum,Level 3 Award,61,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+10,603/2904/X,Autism Support,Level 3 Certificate,20,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+11,601/3926/2,Supporting Individuals on the Autistic Spectrum,Level 3 Certificate,61,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+12,603/1935/5,Understanding Autism ,Level 3 Certificate,18,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+13,601/6071/8,Clinical Skills,Level 2 Certificate,8,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+14,603/0969/6,Certificate in Fundamental Knowledge in Commissioning for Wellbeing,Level 5,12,5,0,0,,2019-07-09 10:21:09,,2019-11-18 17:00:26,0,0,0,NULL,1
+15,601/6122/X,Awareness Of Dementia ,Level 2 Award ,5,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+16,501/1146/2,Awareness Of Dementia ,Level 2 Award ,8,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+17,600/1826/4,Awareness Of Dementia ,Level 2 Award ,12,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+18,601/6927/8,Awareness Of Dementia ,Level 2 Award ,13,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+19,600/8176/4,Awareness Of Dementia ,Level 2 Award ,15,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+20,600/3095/1,Awareness Of Dementia ,Level 2 Award ,18,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+21,501/1257/0,Awareness Of Dementia ,Level 2 Award ,25,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+22,600/4613/2,Awareness Of Dementia ,Level 2 Award ,29,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+23,601/4053/7,Awareness Of Dementia ,Level 2 Award ,31,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+24,501/1206/5,Dementia Care ,Level 2 Certificate ,8,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+25,501/1189/9,Dementia Care ,Level 2 Certificate ,25,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+26,600/4628/4,Dementia Care ,Level 2 Certificate ,29,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+27,601/7940/5,Dementia Care ,Level 2 Certificate ,31,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+28,601/6127/9,Awareness of Dementia ,Level 3 Award,5,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+29,501/1654/X,Awareness of Dementia ,Level 3 Award,8,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+30,601/6925/4,Awareness of Dementia ,Level 3 Award,13,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+31,600/3085/9,Awareness of Dementia ,Level 3 Award,18,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+32,600/9551/9,Awareness Of Dementia ,Level 3 Award,20,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+33,600/2998/5,Awareness of Dementia ,Level 3 Award,25,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+34,601/7430/4,Awareness of Dementia ,Level 3 Award,31,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+35,600/8543/5,Dementia Care,Level 3 Certificate,61,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+36,501/1655/1,Dementia Care,Level 3 Certificate ,8,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+37,601/6270/3,Dementia Care,Level 3 Certificate ,13,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+38,601/5738/0,Dementia Care,Level 3 Certificate ,14,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+39,600/2999/7,Dementia Care,Level 3 Certificate ,25,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+40,601/7262/9,Understanding the Care and Management of Diabetes ,Level 2 Certificate,5,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+41,601/7356/7,Understanding the Care and Management of Diabetes ,Level 2 Certificate,9,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+42,601/5524/3,Understanding the Care and Management of Diabetes ,Level 2 Certificate,15,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+43,601/5542/5,Understanding the Care and Management of Diabetes ,Level 2 Certificate,14,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+44,600/9311/0,Understanding the Care and Management of Diabetes ,Level 2 Certificate,18,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+45,601/4617/5,Understanding the Care and Management of Diabetes ,Level 2 Certificate,31,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+46,603/1609/3,Understanding the Care and Management of Diabetes ,Level 3 Certificate,18,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+47,600/4511/5,Working with Individuals with Diabetes,Level 3 Certificate,61,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+48,601/6129/2,Awareness of End of Life Care,Level 2 Award,5,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+49,600/6919/3,Awareness of End of Life Care,Level 2 Award,8,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+50,601/4586/9,Awareness of End of Life Care,Level 2 Award,12,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+51,601/6928/X,Awareness of End of Life Care,Level 2 Award,13,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+52,600/4893/1,Awareness of End of Life Care,Level 2 Award,18,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+53,601/1120/3,Awareness of End of Life Care,Level 2 Award,25,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+54,601/7938/7,Awareness of End of Life Care,Level 2 Award,31,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+55,601/6134/6,Awareness of End of Life Care,Level 3 Award,5,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+56,600/6842/5,Awareness of End of Life Care,Level 3 Award,8,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+57,601/6926/6,Awareness of End of Life Care,Level 3 Award,13,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+58,601/2566/4,Awareness of End of Life Care,Level 3 Award,14,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+59,601/1121/5,Awareness of End of Life Care,Level 3 Award,25,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+60,601/7716/0,Awareness of End of Life Care,Level 3 Award,31,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+61,600/8100/4,Working in End of Life Care,Level 3 Certificate,61,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+62,600/6841/3,Working in End of Life Care,Level 3 Certificate,8,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+63,601/6269/7,Working in End of Life Care,Level 3 Certificate,13,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+64,601/1122/7,Working in End of Life Care,Level 3 Certificate,25,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+65,600/8141/7,Leading and managing services to support end of life and significant life events,Level 5 Certificate,61,5,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+66,601/7950/8,Leading and managing services to support end of life and significant life events,Level 5 Certificate,31,5,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+67,600/2540/2,Food safety in Health and Social Care and Early Years and Childcare Settings,Level 2 Award,18,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+68,601/7970/3,Food safety in Health and Social Care and Early Years and Childcare Settings,Level 2 Award,31,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+69,600/2541/4,Promoting Food Safety & Nutrition in health and social care or early years and childcare settings,Level 2 Award,18,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+70,601/7427/4,Promoting Food Safety & Nutrition in health and social care or early years and childcare settings,Level 2 Award,31,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+71,603/2227/5,Specialist Award for Chefs in Health and Social Care,Level 2 Award,1,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+72,603/2521/5,Diploma in Care (RQF),Level 2,5,2,0,0,,2019-07-09 10:21:09,,2019-08-16 12:04:29,1,0,0,NULL,0
+73,603/2660/8,Diploma in Care (RQF),Level 2,8,2,0,0,,2019-07-09 10:21:09,,2019-08-16 12:04:37,1,0,0,NULL,0
+74,603/2797/2,Diploma in Care (RQF),Level 2,10,2,0,0,,2019-07-09 10:21:09,,2019-08-16 12:04:48,1,0,0,NULL,0
+75,603/2826/5,Diploma in Care (RQF),Level 2,11,2,0,0,,2019-07-09 10:21:09,,2019-08-16 12:05:06,1,0,0,NULL,0
+76,603/2825/3,Diploma in Care (RQF),Level 2,12,2,0,0,,2019-07-09 10:21:09,,2019-08-16 12:05:10,1,0,0,NULL,0
+77,603/2761/3,Diploma in Care (RQF),Level 2,13,2,0,0,,2019-07-09 10:21:09,,2019-08-16 12:05:13,1,0,0,NULL,0
+78,603/2524/0,Diploma in Care (RQF),Level 2,15,2,0,0,,2019-07-09 10:21:09,,2019-08-16 12:05:17,1,0,0,NULL,0
+79,603/2611/6,Diploma in Care (RQF),Level 2,18,2,0,0,,2019-07-09 10:21:09,,2019-08-16 12:05:20,1,0,0,NULL,0
+80,603/3609/2,Diploma in Care (RQF),Level 2,19,2,0,0,,2019-07-09 10:21:09,,2019-08-16 12:05:23,1,0,0,NULL,0
+81,603/2762/5,Diploma in Care (RQF),Level 2,25,2,0,0,,2019-07-09 10:21:09,,2019-08-16 12:05:28,1,0,0,NULL,0
+82,603/2806/X,Diploma in Care (RQF),Level 2,29,2,0,0,,2019-07-09 10:21:09,,2019-08-16 12:05:31,1,0,0,NULL,0
+83,603/2554/9,Diploma in Care (RQF),Level 2,31,2,0,0,,2019-07-09 10:21:09,,2019-08-16 12:05:34,1,0,0,NULL,0
+84,603/2523/9,Diploma in Adult Care (RQF),Level 3,5,3,0,0,,2019-07-09 10:21:09,,2019-08-16 12:05:37,1,0,0,NULL,0
+85,603/2662/1,Diploma in Adult Care (RQF),Level 3,8,3,0,0,,2019-07-09 10:21:09,,2019-08-16 12:05:40,1,0,0,NULL,0
+86,603/2939/7,Diploma in Adult care (RQF),Level 3,9,3,0,0,,2019-07-09 10:21:09,,2019-08-16 12:05:46,1,0,0,NULL,0
+87,603/2798/4,Diploma in Adult Care (RQF),Level 3,10,3,0,0,,2019-07-09 10:21:09,,2019-08-16 12:05:49,1,0,0,NULL,0
+88,603/2819/8,Diploma in Adult Care (RQF),Level 3,11,3,0,0,,2019-07-09 10:21:09,,2019-08-16 12:05:52,1,0,0,NULL,0
+89,603/2674/8,Diploma in Adult Care (RQF),Level 3,12,3,0,0,,2019-07-09 10:21:09,,2019-08-16 12:05:55,1,0,0,NULL,0
+90,603/2763/7,Diploma in Adult Care (RQF),Level 3,13,3,0,0,,2019-07-09 10:21:09,,2019-08-16 12:06:00,1,0,0,NULL,0
+91,603/2535/5,Diploma in Adult Care (RQF),Level 3,15,3,0,0,,2019-07-09 10:21:09,,2019-08-16 12:06:04,1,0,0,NULL,0
+92,603/2618/9,Diploma in Adult Care (RQF),Level 3,18,3,0,0,,2019-07-09 10:21:09,,2019-08-16 12:06:07,1,0,0,NULL,0
+93,603/3610/9,Diploma in Adult Care (RQF),Level 3,19,3,0,0,,2019-07-09 10:21:09,,2019-08-16 12:06:10,1,0,0,NULL,0
+94,603/2764/9,Diploma in Adult Care (RQF),Level 3,25,3,0,0,,2019-07-09 10:21:09,,2019-08-16 12:06:14,1,0,0,NULL,0
+95,603/2807/1,Diploma in Adult Care (RQF),Level 3,29,3,0,0,,2019-07-09 10:21:09,,2019-08-16 12:06:22,1,0,0,NULL,0
+96,603/2553/7,Diploma in Adult Care (RQF),Level 3,31,3,0,0,,2019-07-09 10:21:09,,2019-08-16 12:06:25,1,0,0,NULL,0
+97,603/2877/0,Diploma in Adult Care (RQF),Level 4,5,4,0,0,,2019-07-09 10:21:09,,2019-08-16 12:07:10,1,0,0,NULL,0
+98,601/5641/7,Diploma in Adult Care (England),Level 4,8,4,0,0,,2019-07-09 10:21:09,,2019-08-16 12:07:15,1,0,0,NULL,0
+99,603/2829/0,Diploma in Adult Care  (RQF),Level 4,12,4,0,0,,2019-07-09 10:21:09,,2019-08-16 12:07:17,1,0,0,NULL,0
+100,603/3181/1,Diploma in Adult Care (RQF),Level 4,13,4,0,0,,2019-07-09 10:21:09,,2019-08-16 12:07:21,1,0,0,NULL,0
+101,603/2517/3,Diploma in Adult Care  (RQF),Level 4,15,4,0,0,,2019-07-09 10:21:09,,2019-08-16 12:07:25,1,0,0,NULL,0
+102,603/2614/1,Diploma in Adult Care  (RQF),Level 4,18,4,0,0,,2019-07-09 10:21:09,,2019-08-16 12:07:27,1,0,0,NULL,0
+103,603/2780/7,Diploma in Adult Care (RQF),Level 4,25,4,0,0,,2019-07-09 10:21:09,,2019-08-16 12:07:31,1,0,0,NULL,0
+104,603/2809/5,Diploma in Adult Care  (RQF),Level 4,29,4,0,0,,2019-07-09 10:21:09,,2019-08-16 12:07:34,1,0,0,NULL,0
+105,603/2901/4,Diploma in Adult Care (RQF),Level 4,31,4,0,0,,2019-07-09 10:21:09,,2019-08-16 12:07:37,1,0,0,NULL,0
+106,603/0974/X,Certificate in principles of leadership and management in adult care,Level 4 ,12,4,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+107,603/0676/2,Certificate in principles of leadership and management in adult care,Level 4 ,15,4,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+108,603/3518/X,Diploma in Leadership and Management for Adult Care (RQF),Level 5,5,5,0,0,,2019-07-09 10:21:09,,2019-08-16 12:07:40,1,0,0,NULL,0
+109,603/3462/9,Diploma in Leadership and Management for Adult Care (RQF),Level 5,8,5,0,0,,2019-07-09 10:21:09,,2019-08-16 12:07:44,1,0,0,NULL,0
+110,603/4684/X,Diploma in Leadership and Management for Adult Care (RQF),Level 5,10,5,0,0,,2019-07-09 10:21:09,,2019-08-16 12:07:03,1,0,0,NULL,0
+111,603/2681/5,Diploma in Leadership and Management for Adult Care (RQF),Level 5,11,5,0,0,,2019-07-09 10:21:09,,2019-08-16 12:06:59,1,0,0,NULL,0
+112,603/3594/4,Diploma in Leadership and Management for Adult Care (RQF),Level 5,12,5,0,0,,2019-07-09 10:21:09,,2019-08-16 12:06:53,1,0,0,NULL,0
+113,603/4136/1 ,Diploma in Leadership and Management for Adult Care (RQF),Level 5,13,5,0,0,,2019-07-09 10:21:09,,2019-08-16 12:06:50,1,0,0,NULL,0
+114,603/3056/9,Diploma in Leadership and Management for Adult Care (RQF),Level 5,15,5,0,0,,2019-07-09 10:21:09,,2019-08-16 12:06:47,1,0,0,NULL,0
+115,603/2422/3,Diploma in Leadership and Management for Adult Care (RQF),Level 5,18,5,0,0,,2019-07-09 10:21:09,,2019-08-16 12:06:44,1,0,0,NULL,0
+116,603/3496/4,Diploma in Leadership and Management for Adult Care (RQF),Level 5,25,5,0,0,,2019-07-09 10:21:09,,2019-08-16 12:06:41,1,0,0,NULL,0
+117,603/3534/8,Diploma in Leadership and Management for Adult Care (RQF),Level 5,29,5,0,0,,2019-07-09 10:21:09,,2019-08-16 12:06:39,1,0,0,NULL,0
+118,603/2564/1,Diploma in Leadership and Management for Adult Care (RQF),Level 5,31,5,0,0,,2019-07-09 10:21:09,,2019-08-16 12:06:35,1,0,0,NULL,0
+119,601/6855/9,Leadership In Health And Social Care And Children And Young People's Services - Adult pathways only. ,Level 5,5,5,0,0,,2019-07-09 10:21:09,,2019-09-12 11:12:27,1,0,0,NULL,0
+120,600/0573/7,Leadership In Health And Social Care And Children And Young People's Services - Adult pathways only. ,Level 5,8,5,0,0,,2019-07-09 10:21:09,,2019-09-12 11:12:48,1,0,0,NULL,0
+121,601/4347/2,Leadership In Health And Social Care And Children And Young People's Services - Adult pathways only. ,Level 5,8,5,0,0,,2019-07-09 10:21:09,,2019-09-12 11:13:08,1,0,0,NULL,0
+122,601/8590/9,Leadership In Health And Social Care And Children And Young People's Services - Adult pathways only. ,Level 5,9,5,0,0,,2019-07-09 10:21:09,,2019-09-12 11:13:39,1,0,0,NULL,0
+123,601/4400/2,Leadership In Health And Social Care And Children And Young People's Services - Adult pathways only. ,Level 5,10,5,0,0,,2019-07-09 10:21:09,,2019-09-12 11:13:59,1,0,0,NULL,0
+124,601/6739/7,Leadership In Health And Social Care And Children And Young People's Services - Adult pathways only. ,Level 5 Diploma,11,5,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+125,601/4265/0,Leadership In Health And Social Care And Children And Young People's Services - Adult pathways only. ,Level 5,12,5,0,0,,2019-07-09 10:21:09,,2019-09-12 11:15:06,1,0,0,NULL,0
+126,601/4453/1,Leadership In Health And Social Care And Children And Young People's Services - Adult pathways only. ,Level 5,13,5,0,0,,2019-07-09 10:21:09,,2019-09-12 11:15:26,1,0,0,NULL,0
+127,601/5704/5,Leadership In Health And Social Care And Children And Young People's Services - Adult pathways only. ,Level 5,14,5,0,0,,2019-07-09 10:21:09,,2019-09-12 11:15:56,1,0,0,NULL,0
+128,601/4259/5,Leadership In Health And Social Care And Children And Young People's Services - Adult pathways only. ,Level 5,15,5,0,0,,2019-07-09 10:21:09,,2019-09-12 11:16:27,1,0,0,NULL,0
+129,601/4312/5,Leadership In Health And Social Care And Children And Young People's Services - Adult pathways only. ,Level 5,18,5,0,0,,2019-07-09 10:21:09,,2019-09-12 11:16:52,1,0,0,NULL,0
+130,601/4578/X,Leadership In Health And Social Care And Children And Young People's Services - Adult pathways only. ,Level 5,21,5,0,0,,2019-07-09 10:21:09,,2019-09-12 11:17:11,1,0,0,NULL,0
+131,601/4438/5,Leadership In Health And Social Care And Children And Young People's Services - Adult pathways only. ,Level 5,25,5,0,0,,2019-07-09 10:21:09,,2019-09-12 11:17:41,1,0,0,NULL,0
+132,601/4340/X,Leadership In Health And Social Care And Children And Young People's Services - Adult pathways only. ,Level 5,29,5,0,0,,2019-07-09 10:21:09,,2019-09-12 11:18:30,1,0,0,NULL,0
+133,601/5590/5,Leadership In Health And Social Care And Children And Young People's Services (QCF) - Adult pathways only. ,Level 5,31,5,0,0,,2019-07-09 10:21:09,,2019-09-12 11:18:53,1,0,0,NULL,0
+134,600/4041/5,Supporting Individuals with Learning Disabilities,Level 2 Award,18,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+135,601/7429/8,Supporting Individuals With Learning Disabilities ,Level 2 Certificate,31,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+136,600/4037/3,Supporting Individuals with Learning Disabilities,Level 3 Award,18,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+137,601/7943/0,Supporting Individuals With Learning Disabilities ,Level 3 Certificate,31,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+138,601/6133/4,Understanding the Safe Handling of Medication,Level 2 Certificate,5,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+139,601/2010/1,Understanding the Safe Handling of Medication,Level 2 Certificate,14,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+140,501/0037/3,Understanding the Safe Handling of Medication,Level 2 Certificate,18,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+141,600/5591/1,Understanding the Safe Handling of Medication,Level 2 Certificate,29,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+142,601/4050/1,Understanding the Safe Handling of Medication,Level 2 Certificate,31,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+143,601/3404/5,Understanding the Safe Handling of Medication in Health and Social Care,Level 2 Certificate,18,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+144,603/3217/7,Understanding the Safe Handling of Medication in Health and Social Care,Level 2 Certificate,31,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+145,603/4455/6,Principles of Medication Handling and Administration for Care Settings,Level 2 Certificate,12,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+146,601/6128/0,Awareness of the Mental Capacity Act 2005,Level 3 Award,5,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+147,601/3621/2,Awareness of the Mental Capacity Act 2005,Level 3 Award,18,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+148,601/1464/2,Awareness of the Mental Capacity Act 2005,Level 3 Award,27,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+149,601/7946/6,Awareness of the Mental Capacity Act 2005,Level 3 Award,31,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+150,601/3438/0,Awareness of Mental Health Problems,Level 2 Certificate,18,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+151,603/2958/0,Awareness of Mental Health Problems,Level 2 Certificate,31,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+152,600/6134/0,Mental Health Awareness,Level 2 Certificate,18,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+153,603/0156/9,Mental Health Awareness,Level 2 Certificate,31,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+154,601/6126/7,Understanding Working in Mental Health,Level 2 Certificate,5,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+155,600/6133/9,Understanding Working in Mental Health,Level 2 Certificate,18,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+156,601/5435/4,Understanding Working in Mental Health,Level 2 Certificate,31,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+157,601/3434/3,Understanding Working with People with Mental Health Needs,Level 2 Certificate,18,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+158,601/8968/X,Understanding Mental Health,Level 3 Certificate,18,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+159,601/4647/3,Understanding Mental Health Care,Level 3 Certificate,31,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+160,603/3269/4,Social Prescribing,Level 3 Certificate,7,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+161,600/4762/8,Stroke Awareness,Level 2 Award,18,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+162,601/7939/9,Stroke Awareness,Level 2 Award,31,2,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+163,600/4627/2,Stroke Care Management,Level 3 Certificate,61,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+164,600/4763/X,Stroke Care Management,Level 3 Certificate,18,3,0,0,,2019-07-09 10:21:09,,NULL,0,0,0,NULL,0
+165,ST0005,Adult Care Worker apprenticeship - Completion of the end point assessment and achievement of the overall standard,Level undefined,60,NULL,0,0,,2019-07-09 10:21:09,,2019-09-18 12:25:53,1,0,1,2,0
+166,ST0006,Lead Adult Care Worker apprenticeship - Completion of the end point assessment and achievement of the overall standard,Level undefined,60,NULL,0,0,,2019-07-09 10:21:09,,2019-09-18 12:26:03,1,0,1,3,0
+167,LTS,Lead to Succeed,Level 0,1,0,0,0,,2019-07-09 10:21:09,,2019-08-12 11:34:49,0,1,0,NULL,0
+168,WL,Well-led,Level 0,1,0,0,0,,2019-07-09 10:21:09,,2019-09-30 15:25:24,0,1,0,NULL,0
+169,CPD – Culture,CPD programme for registered managers: Culture,Level 0,1,0,0,0,,2019-07-09 10:21:09,,2019-08-12 11:56:09,0,1,0,NULL,0
+170,CPD – PM,CPD programme for registered managers: Performance management ,Level 0,1,0,0,0,,2019-07-09 10:21:09,,2019-08-12 11:56:09,0,1,0,NULL,0
+171,CPD – Managing,CPD programme for registered managers: Managing-self,Level 0,1,0,0,0,,2019-07-09 10:21:09,,2019-08-12 11:56:11,0,1,0,NULL,0
+172,603/4136/1,Diploma in Leadership and Management for Adult care (RQF),Level 5,13,5,0,0,,2019-07-25 14:30:09,,2019-08-16 12:06:31,1,0,0,NULL,0
+173,603/3511/7,Understanding Nutrition and Health,Level 2,13,2,0,0,,2019-09-04 08:46:41,,NULL,0,0,0,NULL,0
+174,603/4986/4,Diploma in Adult Care (RQF),Level 4,10,4,0,0,,2019-09-04 08:47:44,,2019-09-05 11:51:07,1,0,0,NULL,0
+175,603/4699/1,Principles of Medication Administration,Level 2,13,2,0,0,,2019-09-04 08:48:39,,NULL,0,0,0,NULL,0
+176,603/4694/2,Mental Health Awareness,Level 2,13,2,0,0,,2019-09-04 08:49:21,,NULL,0,0,0,NULL,0
+177,EOLCLP,End of Life Care awareness programme,Level 0,1,0,0,0,,2019-09-18 14:32:06,,2020-01-21 09:50:58,0,0,0,NULL,0
+178,UPM,Understanding Performance Management,Level 0,1,0,0,0,,2019-09-30 15:23:19,,NULL,0,1,0,NULL,0
+179,USMS,Understanding self-management skills,Level 0,1,0,0,0,,2019-09-30 15:24:11,,NULL,0,1,0,NULL,0
+180,UWC,Understanding workplace culture,Level 0,1,0,0,0,,2019-09-30 15:24:58,,NULL,0,1,0,NULL,0
+181,601/6887/0,Health And Social Care (Adults) England (RQF),Level 2,5,2,0,0,,2019-10-29 12:53:03,,NULL,1,0,0,NULL,0
+182,501/1306/9,Health And Social Care (Adults) England (RQF),Level 2,8,2,0,0,,2019-10-29 12:54:14,,NULL,1,0,0,NULL,0
+183,601/6331/8,Health And Social Care (Adults) England (RQF),Level 2,9,2,0,0,,2019-10-29 12:54:52,,NULL,1,0,0,NULL,0
+184,501/2302/6,Health And Social Care (Adults) England (RQF),Level 2,10,2,0,0,,2019-10-29 12:55:32,,NULL,1,0,0,NULL,0
+185,600/6786/X,Health And Social Care (Adults) England (RQF),Level 2,13,2,0,0,,2019-10-29 12:56:14,,NULL,1,0,0,NULL,0
+186,600/5382/2,Health And Social Care (Adults) England (RQF),Level 2,14,2,0,0,,2019-10-29 12:56:52,,NULL,1,0,0,NULL,0
+187,601/6300/8,Health And Social Care (Adults) England (RQF),Level 2,19,2,0,0,,2019-10-29 12:57:31,,2019-10-29 13:14:01,1,0,0,NULL,0
+188,501/1699/X,Health And Social Care (Adults) England (RQF),Level 2,25,2,0,0,,2019-10-29 13:01:59,,NULL,1,0,0,NULL,0
+189,600/0366/2,Health And Social Care (Adults) England (RQF),Level 2,29,2,0,0,,2019-10-29 13:03:06,,NULL,1,0,0,NULL,0
+190,600/6538/2,Health And Social Care (Adults) England (RQF),Level 2,14,2,0,0,,2019-10-29 13:07:53,,NULL,1,0,0,NULL,0
+191,601/8989/7,Health And Social Care (Adults) England (RQF),Level 2,20,2,0,0,,2019-10-29 13:13:17,,NULL,1,0,0,NULL,0
+192,601/6879/1,Health And Social Care (Adults) England (RQF),Level 3,5,3,0,0,,2019-10-29 13:15:17,,NULL,1,0,0,NULL,0
+193,501/1194/2,Health And Social Care (Adults) England (RQF),Level 3,8,3,0,0,,2019-10-29 13:15:56,,NULL,1,0,0,NULL,0
+194,601/6319/7,Health And Social Care (Adults) England (RQF),Level 3,9,3,0,0,,2019-10-29 13:16:45,,NULL,1,0,0,NULL,0
+195,600/1550/7,Health And Social Care (Adults) England (RQF),Level 3,10,3,0,0,,2019-10-29 13:17:14,,NULL,1,0,0,NULL,0
+196,600/7038/9,Health And Social Care (Adults) England (RQF),Level 3,13,3,0,0,,2019-10-29 13:17:54,,NULL,1,0,0,NULL,0
+197,700/7004/3,Health And Social Care (Adults) England (RQF),Level 3,14,3,0,0,,2019-10-29 13:18:23,,NULL,1,0,0,NULL,0
+198,601/6301/X,Health And Social Care (Adults) England (RQF),Level 3,19,3,0,0,,2019-10-29 13:18:58,,NULL,1,0,0,NULL,0
+199,501/1607/1,Health And Social Care (Adults) England (RQF),Level 3,25,3,0,0,,2019-10-29 13:19:30,,NULL,1,0,0,NULL,0
+200,600/0364/9,Health And Social Care (Adults) England (RQF),Level 3,29,3,0,0,,2019-10-29 13:20:02,,NULL,1,0,0,NULL,0
+201,600/1500/7,Health And Social Care (Adults) England (RQF),Level 3,10,3,0,0,,2019-10-29 13:21:34,,NULL,1,0,0,NULL,0
+202,600/7004/3,Health And Social Care (Adults) England (RQF),Level 3,14,3,0,0,,2019-10-29 13:23:22,,NULL,1,0,0,NULL,0
+203,601/7304/X,Adult Care (England) (RQF),Level 4,5,4,0,0,,2019-10-29 13:25:15,,NULL,1,0,0,NULL,0
+204,601/5822/0,Adult Care (England) (RQF),Level 4,10,4,0,0,,2019-10-29 13:26:01,,NULL,1,0,0,NULL,0
+205,601/5624/7,Adult Care (England) (RQF),Level 4,15,4,0,0,,2019-10-29 13:26:36,,NULL,1,0,0,NULL,0
+206,603/0983/0,Adult Care (England) (RQF),Level 4,29,4,0,0,,2019-10-29 13:27:14,,NULL,1,0,0,NULL,0
+207,603/5139/1,Understanding Autism,Level 2,13,2,0,0,,2019-10-29 13:29:59,,NULL,0,0,0,NULL,0
+208,600/9121/6,Awareness of Dementia,Level 2,20,2,0,0,,2019-10-29 13:30:54,,NULL,0,0,0,NULL,0
+209,DLLM,Digital Learning: Leadership and management,Level 0,72,0,0,0,,2020-01-21 14:07:21,,2020-01-21 14:27:25,0,0,0,NULL,0
+210,DLGRP,Digital Learning: Governance and regulatory processes,Level 0,72,0,0,0,,2020-01-21 14:08:17,,2020-01-21 14:27:36,0,0,0,NULL,0
+211,DLC,Digital Learning: Communication,Level 0,72,0,0,0,,2020-01-21 14:08:55,,2020-01-21 14:27:50,0,0,0,NULL,0
+212,DLRPW,Digital Learning: Relationships and partnership working,Level 0,72,0,0,0,,2020-01-21 14:10:00,,2020-01-21 14:28:00,0,0,0,NULL,0
+213,DLPCPPO,Digital Learning: Person-centred practice for positive outcomes,Level 0,72,0,0,0,,2020-01-21 14:11:03,,2020-01-21 14:28:07,0,0,0,NULL,0
+214,DLPD,Digital Learning: Professional Development,Level 0,72,0,0,0,,2020-01-21 14:11:44,,2020-01-21 14:28:13,0,0,0,NULL,0
+215,DLR,Digital Learning: Resources,Level 0,72,0,0,0,,2020-01-21 14:12:20,,2020-01-21 14:28:30,0,0,0,NULL,0
+216,DLSPR,"Digital Learning: Safeguarding, protection and risk",Level 0,72,0,0,0,,2020-01-21 14:13:07,,2020-01-21 14:28:39,0,0,0,NULL,0
+217,DLMS,Digital Learning: Manage self,Level 0,72,0,0,0,,2020-01-21 14:13:48,,2020-01-21 14:28:48,0,0,0,NULL,0
+218,DLDM,Digital Learning: Decision Making,Level 0,72,0,0,0,,2020-01-21 14:14:31,,2020-01-21 14:28:57,0,0,0,NULL,0
+219,DLESI,Digital Learning: Entrepreneurial skills and innovation,Level 0,72,0,0,0,,2020-01-21 14:15:36,,2020-01-21 14:29:04,0,0,0,NULL,0
+220,601/7265/4,Understanding Nutrition and Health,Level 2,5,2,0,0,,2020-01-21 14:19:36,,NULL,0,0,0,NULL,0
+221,603/5281/4,Understanding the care and management of diabetes,Level 2,13,2,0,0,,2020-03-03 10:50:56,,NULL,0,0,0,NULL,0
+222,603/2942/7,Understanding Autism,Level 2,31,2,0,0,,2020-08-11 15:34:14,,NULL,0,0,0,NULL,0
+223,603/3203/7,Understanding Autism,Level 3,31,3,0,0,,2020-08-11 15:36:35,,2020-08-12 16:06:11,0,0,0,NULL,0
+224,601/4656/4,Understanding Nutrition and Health,Level 2,31,2,0,0,,2020-08-11 15:39:40,,NULL,0,0,0,NULL,0
+225,603/5280/2,Principles of working with individuals with learning disabilities,Level 2,13,2,0,0,,2020-08-11 15:41:13,,NULL,0,0,0,NULL,0
+226,ST0007,Lead Practitioner in Adult Care: completion of the end point assessment and achievement of the overall standard,Level undefined,60,0,0,0,,2020-08-11 15:59:33,,NULL,1,0,1,4,0
+227,ST0008,Leader in Adult Care: completion of the end point assessment and achievement of the overall standard,Level undefined,60,0,0,0,,2020-08-11 16:01:26,,NULL,1,0,1,5,0
+228,603/6251/0,Oral care for Health and Social Care,Level 2,31,2,0,0,,2020-08-14 17:41:40,,NULL,0,0,0,NULL,0
+229,601/3389/2,Understanding Nutrition and Health,Level 2,18,2,0,0,,2020-08-19 14:28:42,,NULL,0,0,0,NULL,0
+230,DLLFE,Digital Learning: Learning from Events,Level 0,72,0,0,0,,2020-10-23 14:53:45,,NULL,0,0,0,NULL,0
+231,DLFE,Digital Learning: Learning from Events,Level 0,72,0,0,0,,2020-11-20 13:45:32,,NULL,0,0,0,NULL,0
+232,DLCCA,Care Certificate Assessors,Level 0,72,0,0,0,,2021-04-27 12:52:31,,NULL,0,0,0,NULL,0
+233,603/6889/5,Independent Advocacy Practice,Level 4,8,4,0,0,,2021-08-06 09:44:44,,NULL,0,0,0,NULL,0
+234,603/4859/8,Awareness and Prevention of Falls,Level 2,13,2,0,0,,2021-08-06 09:45:43,,NULL,0,0,0,NULL,0
+235,603/2552/5,Falls Prevention Awareness,Level 2,18,2,0,0,,2021-08-06 09:47:32,,NULL,0,0,0,NULL,0
+236,603/3201/3,Falls prevention,Level 2,31,2,0,0,,2021-08-06 09:48:13,,NULL,0,0,0,NULL,0
+237,MU,Moving Up,Level 0,1,0,0,0,,2021-08-06 09:51:15,,NULL,0,0,0,NULL,0
+238,603/6744/1,Diploma in Adult Care (RQF),Level 3,15,3,0,0,,2021-10-07 14:09:46,,NULL,1,0,0,NULL,0

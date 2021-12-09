@@ -1,0 +1,35 @@
+{% extends "patterns/base_page.html" %}
+{% load static %}
+
+{% block title %}Workforce Development Fund - Make a Claim{% endblock %}
+
+{% block content %}
+    <div class="govuk-width-container">
+      <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <div class="govuk-panel govuk-panel--confirmation">
+              <h1 class="govuk-panel__title">
+                Claim submitted
+              </h1>
+              <div class="govuk-panel__body">
+                Claim number<br><strong>1234567</strong>
+              </div>
+            </div>
+            <p class="govuk-body">We have sent you a confirmation email.</p>
+
+            <p class="govuk-body">You can track the progress of your claim at any time in your account, as well as a full list of all the claims you have made for this organisation.</p>
+
+            <a href="{% url 'qualification_input' %}" class="govuk-button" data-module="govuk-button">
+              Make Another Claim
+            </a>
+            <a href="#0" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+              View Your Claims
+            </a>
+
+          </div>
+        </div>
+      </main>
+    </div>
+
+{% endblock %}

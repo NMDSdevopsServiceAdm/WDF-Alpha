@@ -1,0 +1,60 @@
+{% extends "patterns/base_page.html" %}
+{% load static %}
+
+{% block title %}Workforce Development Fund - Make a Claim{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="" method="post">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" role="group" aria-describedby="certificate-issued-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h1 class="govuk-fieldset__heading">
+                  What is the date of issue of the certificate?
+                </h1>
+              </legend>
+              <div class="govuk-inset-text">
+                This must be between 1 January 2021 and 31 March 2022
+              </div>
+              <div id="certificate-issued-hint" class="govuk-hint">
+                For example, 27 11 2021
+              </div>
+              <div class="govuk-date-input" id="certificate-issued">
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="certificate-issued-day">
+                      Day
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="certificate-issued-day" name="certificate-issued-day" type="text" pattern="[0-9]+" inputmode="numeric" required></div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="certificate-issued-month">
+                      Month
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="certificate-issued-month" name="certificate-issued-month" type="text" pattern="[0-9]+" inputmode="numeric" required></div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="certificate-issued-year">
+                      Year
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="certificate-issued-year" name="certificate-issued-year" type="text" pattern="[0-9]+" inputmode="numeric" required></div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          {% include 'claims/snippets/buttons.html' %}
+        </form>
+      </div>
+
+      {% include 'claims/snippets/sidebar.html' %}
+    </div>
+  </main>
+</div>
+{% endblock %}

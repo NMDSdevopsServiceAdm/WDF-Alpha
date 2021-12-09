@@ -1,0 +1,104 @@
+{% extends "patterns/base_page.html" %}
+{% load static %}
+
+{% block title %}Workforce Development Fund - Make a Claim{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="" method="post">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  Would you like to claim the full value of this development activity?
+                </h1>
+              </legend>
+              <div class="govuk-inset-text">
+                The value of this qualification is £{{request.session.qualification.fund_value}}.
+              </div>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="claim-full-value-yes"
+                    name="claim-full-value"
+                    type="radio"
+                    value="yes"
+                    required
+                    {% if request.session.previous_claim_value_radio %}
+                      checked
+                    {% endif %}
+                  >
+                  <label class="govuk-label govuk-radios__label" for="claim-full-value-yes">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="claim-full-value-no"
+                    name="claim-full-value"
+                    type="radio"
+                    value="no"
+                    {% if request.session.previous_claim_value_radio == False %}
+                      checked
+                    {% endif %}
+                  >
+                  <label class="govuk-label govuk-radios__label" for="claim-full-value-no">
+                    No
+                  </label>
+                </div>
+                <div class="govuk-inset-text" id="other-please-specify">
+                  <label class="govuk-label" for="claim-value">
+                    How much of the value do you want to claim?
+                  </label>
+                  £
+                  <input
+                    type="number"
+                    min="1"
+                    max="{{request.session.qualification.fund_value}}"
+                    class="govuk-input govuk-input--width-5"
+                    id="claim-value"
+                    name="claim-value"
+                    type="text"
+                    value="{{ request.session.previous_claim_value_freetext }}"
+                  >
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          {% include 'claims/snippets/buttons.html' %}
+        </form>
+      </div>
+
+      {% include 'claims/snippets/sidebar.html' %}
+    </div>
+  </main>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+  <script>
+    var handler = function() {
+      if (document.getElementById("claim-full-value-no").checked === true) {
+        document.getElementById("other-please-specify").style.display = '';
+      } else {
+        document.getElementById("other-please-specify").style.display = 'none';
+      }
+    };
+
+    handler();
+
+    document.getElementById(
+      "claim-full-value-yes"
+    ).addEventListener('change', handler, false);
+    document.getElementById(
+      "claim-full-value-no"
+    ).addEventListener('change', handler, false);
+  </script>
+{% endblock %}

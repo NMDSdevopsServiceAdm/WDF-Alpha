@@ -1,0 +1,64 @@
+{% extends "patterns/base_page.html" %}
+{% load static %}
+
+{% block title %}Workforce Development Fund - Make a Claim{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="" method="post">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  Did the learner obtain this qualification as part of an apprenticeship standard?
+                </h1>
+              </legend>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="apprenticeship-yes"
+                    name="apprenticeship"
+                    type="radio"
+                    value="yes"
+                    required
+                    {% if request.session.previous_apprenticeship_radio %}
+                      checked
+                    {% endif %}
+                  >
+                  <label class="govuk-label govuk-radios__label" for="apprenticeship-yes">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="apprenticeship-no"
+                    name="apprenticeship"
+                    type="radio"
+                    value="no"
+                    {% if request.session.previous_apprenticeship_radio == False %}
+                      checked
+                    {% endif %}
+                  >
+                  <label class="govuk-label govuk-radios__label" for="apprenticeship-no">
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          {% include 'claims/snippets/buttons.html' %}
+        </form>
+      </div>
+
+      {% include 'claims/snippets/sidebar.html' %}
+    </div>
+  </main>
+</div>
+{% endblock %}

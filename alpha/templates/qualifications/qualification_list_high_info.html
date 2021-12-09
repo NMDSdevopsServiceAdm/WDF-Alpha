@@ -1,0 +1,58 @@
+{% extends "qualifications/qualification_list_base.html" %}
+
+{% block qual_list_items %}
+  {% for qual in qualificationvalue_list %}
+    <li class="gem-c-document-list__item">
+      <a
+        class="gem-c-document-list__item-title govuk-link"
+        href="{% url 'qualification_detail' qual.id %}"
+      >
+        {{ qual.qualification.qualification_title }}
+      </a>
+      {% if qual.qualification.awarding_body.name_human %}
+        <br />
+        <span class="gem-c-document-list__item-context">
+          {{ qual.qualification.awarding_body.name_human }}
+        </span>
+      {% endif %}
+      <ul class="gem-c-document-list__children">
+        <li class="gem-c-document-list-child">
+          <span>
+            {% if qual.qualification.qualification_category == "Qualification" %}
+              Qualification number:
+            {% else %}
+              Claim code:
+            {% endif %}
+          </span>
+          <span>{{ qual.qualification.qualification_code }}</span>
+        </li>
+        <li class="gem-c-document-list-child">
+          <span>Funding value:</span>
+          <span>{{ qual.funding_value_human }}</span>
+        </li>
+        {% if qual.qualification.qualification_type1 %}
+          <li class="gem-c-document-list-child">
+            <span>Type:</span>
+            <span>{{ qual.qualification.qualification_type1 }}</span>
+          </li>
+        {% endif %}
+        {% if qual.qualification.level %}
+          <li class="gem-c-document-list-child">
+            <span>Level:</span>
+            <span>{{ qual.qualification.level }}</span>
+          </li>
+        {% endif %}
+        {% if qual.qualification.level %}
+          <li class="gem-c-document-list-child">
+            <span>Development Activity:</span>
+            <span>{{ qual.qualification.qualification_category }}</span>
+          </li>
+        {% endif %}
+        <li class="gem-c-document-list-child">
+          <span>Credits:</span>
+          <span>{{ qual.qualification.num_credits }}</span>
+        </li>
+      </ul>
+    </li>
+  {% endfor %}
+{% endblock %}

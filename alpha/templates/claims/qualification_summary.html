@@ -1,0 +1,39 @@
+{% extends "patterns/base_page.html" %}
+{% load static %}
+
+{% block title %}Workforce Development Fund - Make a Claim{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-form-group">
+          <h1 class="govuk-heading-xl">Which development activity are you claiming for?</h1>
+
+          <p class="govuk-body">The following qualification matches the number you entered.</p>
+          <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                {{ request.session.qualification.qualification_code }}
+              </dt>
+              <dd class="govuk-summary-list__value">
+                {{ request.session.qualification.qualification_title }}<br />
+                {{ request.session.qualification.awarding_body_name }}<br />
+                {{ request.session.qualification.qualification_type }}<br />
+              </dd>
+            </div>
+          </dl>
+          <a href="{% url 'qualification_input' %}">Choose a different development activity</a>
+        </div>
+
+        <form action="" method="post">
+          {% include 'claims/snippets/buttons.html' %}
+        </form>
+
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

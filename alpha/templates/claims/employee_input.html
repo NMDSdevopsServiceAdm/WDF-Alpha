@@ -1,0 +1,174 @@
+{% extends "patterns/base_page.html" %}
+{% load static %}
+
+{% block title %}Workforce Development Fund - Make a Claim{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <form action="" method="post" id="form">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="employee-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <div class="govuk-grid-column-two-thirds">
+                  <h1 class="govuk-heading-xl">
+                    Which employees are you claiming for?
+                  </h1>
+                </div>
+              </legend>
+              <div class="govuk-grid-column-two-thirds">
+                <div id="employee-hint" class="govuk-hint">
+                  <p class="govuk-body">
+                    Choose one or more employees you'd like to claim funding for.
+                    You can add more employees to this claim later if you need to.
+                  </p>
+
+                  <p class="govuk-body">
+                    You can select any employee from your organisation and workplaces who has an up to date staff record.
+                  </p>
+
+                  <p class="govuk-body">
+                    If you’re trying to claim for anyone not on the list displayed, check that they are in ASC-WDS and that their staff record is complete.
+                  </p>
+                </div>
+              </div>
+
+              <div class="govuk-grid-column-one-half">
+                <h2 class="govuk-heading-m" id="subsection-title">
+                  Add employees
+                </h2>
+                <div
+                  class="gem-c-search gem-c-search--on-white gem-c-search--separate-label"
+                  data-module="gem-toggle-input-class-on-focus"
+                  style="display:none;"
+                  id="searchbox"
+                >
+                  <div id="employee-hint" class="govuk-hint">
+                    Search by name, workplace or job title. Use the checkboxes to add employees to your claim.
+                  </div>
+                  <label for="finder-keyword-search" class="gem-c-search__label">
+                    Search
+                  </label>
+                  <div class="gem-c-search__item-wrapper">
+                    <input aria-controls="js-search-results-info" class="gem-c-search__item gem-c-search__input js-class-toggle" id="finder-keyword-search" name="keywords" title="Search" type="search" value="">
+                    <div class="gem-c-search__item gem-c-search__submit-wrapper">
+                      <button id="search-submit" class="gem-c-search__submit" type="submit" data-module="gem-track-click">
+                        Search
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="employee-list" class="govuk-checkboxes">
+                  <div id="resultscount"></div>
+                  <ul class="list" style="list-style: none; padding-left: 0;">
+                    {% for employee in employees %}
+                      <li>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="employee-{{ employee.id }}" name="employee" type="checkbox" value="{{ employee.id }}">
+                          <label class="govuk-label govuk-checkboxes__label" for="employee-{{ employee.id }}">
+                            <strong><span class="search-name">{{ employee.name }}</span></strong><br/>
+                              <span class="search-role">{{ employee.job_role }}</span><br/>
+                              <span class="search-workplace">{{ employee.workplace }}</span>
+                          </label>
+                        </div>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+
+              </div>
+              <div class="govuk-grid-column-one-half">
+                <aside id="sidebar" class="app-related-items" role="complementary" style="background-color: #f3f2f1; padding:20px; display:none;">
+                </aside>
+              </div>
+
+            </fieldset>
+          </div>
+          {% include 'claims/snippets/buttons.html' %}
+        </form>
+
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  var selectedEmployees = {};
+
+  function updateSidebar() {
+    var innerHTML = '<h2 class="govuk-heading-m" id="subsection-title">' +
+      'You have selected ' + Object.keys(selectedEmployees).length + ' employees</h2>' +
+      '<ul class="govuk-list govuk-list--bullet">';
+    for (var key in selectedEmployees) {
+      innerHTML += '<li><strong>' + selectedEmployees[key]['search-name'] +
+      '</strong><br />' + selectedEmployees[key]['search-role'] + '<br />' +
+      selectedEmployees[key]['search-workplace'] + '</li>';
+    }
+    innerHTML += '</ul>';
+    document.getElementById('sidebar').innerHTML = innerHTML;
+
+    if (Object.keys(selectedEmployees).length > 0) {
+      document.getElementById("submit-button").disabled = false;
+    } else {
+      document.getElementById("submit-button").disabled = true;
+    }
+  }
+
+  var checkboxes = document.getElementsByClassName('govuk-checkboxes__input');
+  for (var i = 0; i < checkboxes.length; i++) {
+    checkboxes[i].addEventListener(
+      'change',
+      function(e) {
+        var employeeFields = e.target.nextElementSibling.getElementsByTagName('span');
+        if (e.target.checked) {
+          selectedEmployees[e.target.id] = {
+            'search-name': employeeFields[0].innerText,
+            'search-role': employeeFields[1].innerText,
+            'search-workplace': employeeFields[2].innerText
+          };
+        } else {
+          delete selectedEmployees[e.target.id];
+        }
+        updateSidebar();
+      },
+      false
+    );
+  }
+
+  var list = new ListJS('employee-list', {
+    valueNames:['search-name', 'search-role', 'search-workplace'],
+    searchDelay: 500
+  });
+  list.search('99999');  // hack: start off showing 0 results
+
+  document.getElementById('search-submit').addEventListener(
+    'click',
+    function(e) {
+      e.preventDefault();
+      list.search(document.getElementById('finder-keyword-search').value);
+      document.getElementById('resultscount').innerHTML = '' +
+        '<h3 class="govuk-heading-s" style="border-bottom: 1px solid #b1b4b6; padding-bottom: 20px;">' +
+        'Showing ' + list.matchingItems.length + ' employees</h3>';
+    },
+    false
+  );
+
+  updateSidebar();
+
+  document.getElementById('form').addEventListener(
+    'submit',
+    function(e) {
+      list.search();
+    },
+    false
+  );
+
+  document.getElementById('sidebar').style.display = '';
+  document.getElementById('searchbox').style.display = '';
+</script>
+{% endblock %}

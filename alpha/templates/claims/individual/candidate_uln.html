@@ -1,0 +1,80 @@
+{% extends "patterns/base_page.html" %}
+{% load static %}
+
+{% block title %}Workforce Development Fund - Make a Claim{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="" method="post">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" role="group" aria-describedby="certificate-issued-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h1 class="govuk-fieldset__heading">
+                  Confirm the learner’s candidate details for this development activity?
+                </h1>
+              </legend>
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="id_candidate_uln">
+                  Candidate’s Unique Learner Number (ULN)
+                </label>
+                {% if form.candidate_uln.value == form.candidate_uln.initial %}
+                  <div class="govuk-hint govuk-inset-text">
+                    This ULN has already been added based on a previous claim you made for this learner
+                  </div>
+                {% endif %}
+                {% if form.errors %}
+                  <div class="govuk-form-group govuk-form-group--error">
+                    <span id="national-insurance-number-error" class="govuk-error-message">
+                      <span class="govuk-visually-hidden">Error:</span>
+                      {{ form.non_field_errors.0 }}
+                    </span>
+                {% endif %}
+                {{ form.candidate_uln }}
+                {% if form.errors %}
+                  </div>
+                {% endif %}
+              </div>
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="id_candidate_reg_no">
+                  Candidate registration number
+                </label>
+                <div id="candidate-reg-no-hint" class="govuk-hint">
+                  This is the candidate registration number with the awarding organisation.
+                </div>
+                {% if form.candidate_reg_no.value == form.candidate_reg_no.initial %}
+                  <div class="govuk-hint govuk-inset-text">
+                    This candidate registration number has already been added based on a previous claim made for this learner for a qualification gained from this awarding organisation.
+                  </div>
+                {% endif %}
+                {{ form.candidate_reg_no }}
+              </div>
+
+            </fieldset>
+          </div>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                I can’t find the candidate registration number
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              Please contact the candidate or learning provider to confirm the registration number
+            </div>
+          </details>
+
+          {% include 'claims/snippets/buttons.html' %}
+        </form>
+      </div>
+
+      {% include 'claims/snippets/sidebar.html' %}
+    </div>
+  </main>
+</div>
+{% endblock %}

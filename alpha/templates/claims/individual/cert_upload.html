@@ -1,0 +1,35 @@
+{% extends "patterns/base_page.html" %}
+{% load static %}
+
+{% block title %}Workforce Development Fund - Make a Claim{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="" method="post">
+          <h1 class="govuk-heading-xl">Upload the learner’s certificate</h1>
+          <p class="govuk-body">
+            This should the certificate file that was sent from the learning provider. It is usually a PDF.
+            If you have a physical certificate, please upload a photograph with the details of the certificate clearly visible.
+          </p>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="cert-upload">
+              Upload a file
+            </label>
+            <input class="govuk-file-upload" id="cert-upload" name="cert-upload" type="file">
+          </div>
+
+          {% include 'claims/snippets/buttons.html' %}
+        </form>
+
+      </div>
+
+      {% include 'claims/snippets/sidebar.html' %}
+    </div>
+  </main>
+</div>
+{% endblock %}

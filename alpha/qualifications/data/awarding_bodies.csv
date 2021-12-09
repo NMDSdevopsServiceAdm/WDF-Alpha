@@ -1,0 +1,87 @@
+AwardingBodyId,Name,IsDeleted,CreatedBy,CreatedDate,LastUpdatedBy,LastUpdatedDate
+1,AO-Unknown,0,,2018-06-11 16:26:04,,2019-03-13 10:58:14
+2,AO-Agored Cymru,0,,2018-06-11 16:26:04,,NULL
+3,AO-Ascentis,0,,2018-06-11 16:26:04,,NULL
+4,AO-Ava Global,0,,2018-06-11 16:26:04,,NULL
+5,AO-BIIAB,0,,2018-06-11 16:26:04,,NULL
+6,AO-Cache,0,,2018-06-11 16:26:04,,NULL
+7,AO-Certa,0,,2018-06-11 16:26:04,,NULL
+8,AO-City and Guilds,0,,2018-06-11 16:26:04,,NULL
+9,AO-Focus Awards,0,,2018-06-11 16:26:04,,NULL
+10,AO-Future Quals,0,,2018-06-11 16:26:04,,NULL
+11,AO-Gateway Qualifications,0,,2018-06-11 16:26:04,,NULL
+12,AO-Highfield ABC,0,,2018-06-11 16:26:04,,NULL
+13,AO-I Can Qualify,0,,2018-06-11 16:26:04,,NULL
+14,AO-SFJ Awards,0,,2018-06-11 16:26:04,,2021-03-19 16:06:17
+15,AO-Innovate Awarding,0,,2018-06-11 16:26:04,,NULL
+16,AO-Laser Learning Awards,0,,2018-06-11 16:26:04,,NULL
+17,AO-Middlesex University,0,,2018-06-11 16:26:04,,NULL
+18,AO-NCFE,0,,2018-06-11 16:26:04,,NULL
+19,AO-NOCN,0,,2018-06-11 16:26:04,,NULL
+20,AO-OCN,0,,2018-06-11 16:26:04,,NULL
+21,AO-OCR,0,,2018-06-11 16:26:04,,NULL
+22,AO-Open College Network,0,,2018-06-11 16:26:04,,NULL
+23,AO-Other,0,,2018-06-11 16:26:04,,NULL
+24,AO-OTHM Qualifications,0,,2018-06-11 16:26:04,,NULL
+25,AO-Pearson,0,,2018-06-11 16:26:04,,NULL
+26,AO-Pearson (use for Edexcel and EDI),0,,2018-06-11 16:26:04,,NULL
+27,AO-ProQual Awarding Body,0,,2018-06-11 16:26:04,,NULL
+28,AO-Scottish Qualifications Authority (SQA),0,,2018-06-11 16:26:04,,NULL
+29,AO-Skills First,0,,2018-06-11 16:26:04,,NULL
+30,AO-Training 2 Care,0,,2018-06-11 16:26:04,,NULL
+31,AO-Training Qualifications UK,0,,2018-06-11 16:26:04,,NULL
+32,AO-University College Birmingham,0,,2018-06-11 16:26:04,,NULL
+33,AO-University of Chichester,0,,2018-06-11 16:26:04,,NULL
+34,EP-MEDEX,0,,2018-06-11 16:26:04,,NULL
+35,EP-Acacia,0,,2018-06-11 16:26:04,,NULL
+36,EP-Accomplish Group,0,,2018-06-11 16:26:04,,NULL
+37,EP-Careshield,0,,2018-06-11 16:26:04,,NULL
+38,EP-Caroline Coleman,0,,2018-06-11 16:26:04,,NULL
+39,EP-Choice Support,0,,2018-06-11 16:26:04,,NULL
+40,EP-Choices Housing Association,0,,2018-06-11 16:26:04,,NULL
+41,EP-Dawn Hodge Associates,0,,2018-06-11 16:26:04,,NULL
+42,EP-Freebird Associates,0,,2018-06-11 16:26:04,,NULL
+43,EP-Grey Matter Group,0,,2018-06-11 16:26:04,,NULL
+44,EP-HF Trust Ltd (Wakefield),0,,2018-06-11 16:26:04,,NULL
+45,EP-Jeesal Akman Services,0,,2018-06-11 16:26:04,,NULL
+46,EP-Jerry Garrett,0,,2018-06-11 16:26:04,,NULL
+47,EP-JS Consultants UK Ltd,0,,2018-06-11 16:26:04,,NULL
+48,EP-Leeds City Council,0,,2018-06-11 16:26:04,,NULL
+49,EP-MCCH,0,,2018-06-11 16:26:04,,NULL
+50,EP-Midshires Care Ltd,0,,2018-06-11 16:26:04,,NULL
+51,EP-Pat Pearson,0,,2018-06-11 16:26:04,,NULL
+52,EP-Sanctuary Care Ltd,0,,2018-06-11 16:26:04,,NULL
+53,EP-Shropshire Partners in Care,0,,2018-06-11 16:26:04,,NULL
+54,EP-Social Enterprise Kent,0,,2018-06-14 10:18:04,,NULL
+55,EP-Training 2 Care (UK) Ltd,0,,2018-06-14 10:18:04,,NULL
+56,EP-Unique Training Solutions Ltd,0,,2018-06-14 10:18:04,,NULL
+57,EP-Yvonne Mitchell,0,,2018-06-14 10:18:04,,NULL
+58,EP-Inessentia,0,,2018-06-14 10:18:04,,NULL
+60,AO-Institute for Apprenticeships and Technical Education,0,,2019-07-10 14:31:16,,NULL
+61,AO-AIM Awards,0,,2019-07-10 14:46:05,,NULL
+62,EP-EQWIP,0,,2019-09-24 15:59:58,,NULL
+63,EP-E Training,0,,2019-09-24 16:00:51,,NULL
+64,EP-Independent Training Services Ltd,0,,2019-09-24 16:01:15,,NULL
+65,EP-Alium Care Training Ltd,0,,2019-09-24 16:01:32,,NULL
+66,EP-Hertfordshire Care Providers Association (HCPA),0,,2019-10-02 15:22:42,,NULL
+67,EP-Hampshire County Council,0,,2019-10-25 09:27:16,,2020-04-23 13:03:18
+68,EP-Barnsley MBC,0,,2019-10-25 09:28:04,,2020-04-23 13:03:11
+69,EP-Colman Training,0,,2019-10-25 09:28:19,,2020-04-23 13:03:25
+70,EP-Essential Training,0,,2020-01-17 16:32:50,,NULL
+71,EP-Chosen Care Group Ltd,0,,2020-01-17 16:33:13,,NULL
+72,AO-Skills for Care,0,,2020-01-21 14:23:33,,2020-01-31 13:13:00
+73,EP-Social Works Limited,0,,2020-02-12 11:28:52,,NULL
+74,EP-Access Skills Ltd,0,,2020-03-13 12:42:14,,NULL
+75,EP-Bespoke,0,,2020-03-13 12:46:34,,NULL
+76,EP-White's Training,0,,2020-03-13 12:47:14,,2020-04-23 13:02:41
+80,EP-The Fremantle Trust,0,,2020-08-25 15:02:04,,NULL
+81,EP-Mitera,0,,2020-09-22 09:35:11,,NULL
+82,EP-Quest Recovery Service,0,,2020-09-22 09:51:20,,NULL
+83,EP-Mitera Training Academy ,0,,2020-10-12 12:18:54,,2020-10-12 16:38:38
+84,ep-IPS International,0,,2020-11-19 09:19:48,,NULL
+85,ep-Kemble training,0,,2020-11-19 09:20:03,,NULL
+86,ep-Tempest,0,,2020-11-19 09:20:38,,NULL
+87,ep-Hospice in the weald,0,,2020-11-19 09:21:04,,NULL
+88,EP-Adams Care Training,0,,2021-01-05 11:03:54,,NULL
+89,EP-Chesterfield College,0,,2021-01-21 16:32:37,,NULL
+90,EP - Thera Trust,0,,2021-09-29 17:08:23,,NULL

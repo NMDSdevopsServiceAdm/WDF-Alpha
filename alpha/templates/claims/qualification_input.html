@@ -1,0 +1,65 @@
+{% extends "patterns/base_page.html" %}
+{% load static %}
+
+{% block title %}Workforce Development Fund - Make a Claim{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="" method="post">
+          <div class="govuk-form-group">
+            <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--xl" for="id_claim_code">
+                Which development activity are you claiming for?
+              </label>
+            </h1>
+            <p class="govuk-body">
+              You can claim for qualifications, apprenticeships, learning programmes or digital modules.
+              <a href="{% url 'qualification_list' %}">View the full list of Workforce Development Fund (WDF) funded qualifications and learning</a>.
+            </p>
+            <div id="claim-code-hint" class="govuk-hint">
+              Qualification number or claim code
+            </div>
+
+            {% if form.errors %}
+              <div class="govuk-form-group govuk-form-group--error">
+                <span id="national-insurance-number-error" class="govuk-error-message">
+                  <span class="govuk-visually-hidden">Error:</span> That is not a valid qualification or claim code
+                  <div id="claim-code-hint" class="govuk-hint">
+                    Please check the
+                    <a href="{% url 'qualification_list' %}">list of funded training and development</a>
+                    to find the correct code for the activity you want to claim for.
+                  </div>
+                </span>
+            {% endif %}
+            {{ form.claim_code }}
+            {% if form.errors %}
+              </div>
+            {% endif %}
+
+          </div>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                What is this?
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              Each development activity that you can claim funding for has a qualification number or claim code. You can find this on the candidate’s certificate, or on the
+              <a href="{% url 'qualification_list' %}">
+                list of funded qualifications and learning
+              </a>.
+            </div>
+          </details>
+
+          {% include 'claims/snippets/buttons.html' %}
+        </form>
+
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

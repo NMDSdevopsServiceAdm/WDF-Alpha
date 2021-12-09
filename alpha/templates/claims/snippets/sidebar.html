@@ -1,0 +1,48 @@
+<div class="govuk-grid-column-one-third">
+  <aside class="app-related-items" role="complementary" style="background-color: #f3f2f1; padding:20px;">
+    <h1 class="govuk-heading-l" id="subsection-title">
+      Claim 12345678
+    </h1>
+
+    <h2 class="govuk-heading-m" id="subsection-title">
+      Adding details for {{ current_individual_claim.name }}
+    </h2>
+      <h3>{{ request.session.qualification.qualification_title }}</h3>
+      <p class="govuk-body">
+        {{ request.session.qualification.qualification_code }}<br />
+        {{ request.session.qualification.awarding_body_name }}<br />
+        {{ request.session.qualification.qualification_type }}<br />
+      </p>
+
+      {% if current_individual_claim.cert_date %}
+        <h3>Certificate date</h3>
+        <p class="govuk-body">{{ current_individual_claim.cert_date }}</p>
+      {% endif %}
+
+      {% if current_individual_claim.candidate_uln %}
+        <h3>Unique Learner Number (ULN)</h3>
+        <p class="govuk-body">{{ current_individual_claim.candidate_uln }}</p>
+      {% endif %}
+
+      {% if current_individual_claim.candidate_reg_no %}
+        <h3>Candidate number</h3>
+        <p class="govuk-body">{{ current_individual_claim.candidate_reg_no }}</p>
+      {% endif %}
+
+      {% if current_individual_claim.cert_file %}
+        <h3>Certificate file name</h3>
+        <p class="govuk-body">{{ current_individual_claim.cert_file }}</p>
+      {% endif %}
+
+      {% if current_individual_claim.learning_provider %}
+        <h3>Learning provider</h3>
+        <p class="govuk-body">{{ current_individual_claim.learning_provider }}</p>
+      {% endif %}
+
+      {% if current_individual_claim.apprenticeship is not None %}
+        <h3>Part of apprenticeship</h3>
+        <p class="govuk-body">{{ current_individual_claim.apprenticeship | yesno:"Yes,No" }}</p>
+      {% endif %}
+    </p>
+  </aside>
+</div>

@@ -1,0 +1,239 @@
+{% extends "patterns/base_page.html" %}
+{% load static %}
+
+{% block title %}Workforce Development Fund - Make a Claim{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-form-group">
+          <h1 class="govuk-heading-xl">Claim 12345678</h1>
+
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header" style="border-bottom:0px;">Total claim value</th>
+                <th scope="col" class="govuk-table__header" style="border-bottom:0px;">Development activities</th>
+                <th scope="col" class="govuk-table__header" style="border-bottom:0px;">Employees</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" style="border-bottom:0px;">£{{ request.session.running_total }}</td>
+                <td class="govuk-table__cell" style="border-bottom:0px;">1</td>
+                <td class="govuk-table__cell" style="border-bottom:0px;">{{ request.session.individual_claims | length }}</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="finder-results js-finder-results" data-module="gem-track-click">
+            <ul
+              class="gem-c-document-list"
+              style="border-top:0px; border-bottom:1px solid #b1b4b6;"
+            >
+              <li class="gem-c-document-list__item">
+                <span class="gem-c-document-list__item-title">
+                  {{ request.session.qualification.qualification_title }}
+                </span>
+                {% if request.session.qualification.awarding_body_name %}
+                  <br />
+                  <span class="gem-c-document-list__item-context">
+                    {{ request.session.qualification.awarding_body_name }}
+                  </span>
+                {% endif %}
+                <ul class="gem-c-document-list__children">
+                  <li class="gem-c-document-list-child">
+                    <span>Claim Code:</span>
+                    <span>{{ request.session.qualification.qualification_code }}</span>
+                  </li>
+                  <li class="gem-c-document-list-child">
+                    <span>{{ request.session.qualification.qualification_type }}</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          {% for k, v in request.session.individual_claims.items %}
+            <dl class="govuk-summary-list" style="margin-bottom: 0px;">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  {{ v.name }}
+                </dt>
+                <dd class="govuk-summary-list__actions">
+                  {% if not v.is_complete %}
+                    <a class="govuk-link" href="{% url 'cert_date' id=k %}">
+                      Add Details<span class="govuk-visually-hidden"> for {{ v.name }}</span>
+                    </a>
+                  {% endif %}
+                  <div id="show-hide-div-{{ k }}"></div>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#0" style="color: #d4351c;">
+                    Remove<span class="govuk-visually-hidden"> {{ v.name }}</span>
+                  </a>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  {% if v.is_complete %}
+                    <strong class="govuk-tag">complete</strong>
+                  {% else %}
+                    <strong class="govuk-tag govuk-tag--grey">incomplete</strong>
+                  {% endif %}
+                </dd>
+              </div>
+            </dl>
+
+            {% if v.is_complete %}
+              <div class="govuk-details__text" id="claim-details-{{ k }}">
+                <dl class="govuk-summary-list" style="margin-bottom: 0px;">
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">Claim value</dt>
+                    <dd class="govuk-summary-list__value">
+                      £ {{ v.claim.value }}
+                      {% if v.claim.full_value %}
+                        (full value)
+                      {% else %}
+                        (less than full value)
+                      {% endif %}
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="#0">
+                        Change<span class="govuk-visually-hidden"> Claim value</span>
+                      </a>
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">Certificate date</dt>
+                    <dd class="govuk-summary-list__value">{{ v.cert_date }}</dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="#0">
+                        Change<span class="govuk-visually-hidden"> Certificate date</span>
+                      </a>
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">Unique Learner Number (ULN)</dt>
+                    <dd class="govuk-summary-list__value">{{ v.candidate_uln }}</dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="#0">
+                        Change<span class="govuk-visually-hidden"> Unique Learner Number (ULN)</span>
+                      </a>
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">Candidate number</dt>
+                    <dd class="govuk-summary-list__value">{{ v.candidate_reg_no }}</dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="#0">
+                        Change<span class="govuk-visually-hidden"> Candidate number</span>
+                      </a>
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt
+                      class="govuk-summary-list__key">Certificate file name</dt>
+                    <dd class="govuk-summary-list__value">{{ v.cert_file }}</dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="#0">
+                        Change<span class="govuk-visually-hidden"> Certificate file</span>
+                      </a>
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt
+                      class="govuk-summary-list__key">Learning provider</dt>
+                    <dd class="govuk-summary-list__value">{{ v.learning_provider }}</dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="#0">
+                        Change<span class="govuk-visually-hidden"> Learning provider</span>
+                      </a>
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt
+                      class="govuk-summary-list__key">Part of apprenticeship</dt>
+                    <dd class="govuk-summary-list__value">{{ v.apprenticeship | yesno:"Yes,No" }}</dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="#0">
+                        Change<span class="govuk-visually-hidden"> Part of apprenticeship</span>
+                      </a>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+              <br />
+            {% endif %}
+
+          {% endfor %}
+        </div>
+
+        <div class="govuk-form-group">
+          <a href="#0" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+            Add another person
+          </a>
+        </div>
+
+        <div class="govuk-form-group">
+          <a href="#0" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+            Add another development activity
+          </a>
+        </div>
+
+        <form action="" method="post">
+          <div class="govuk-form-group">
+            {% if can_submit %}
+              <button class="govuk-button" data-module="govuk-button" type="submit">
+                Submit Claim
+              </button>
+            {% else %}
+              <button class="govuk-button" data-module="govuk-button" type="submit" disabled>
+                Submit Claim
+              </button>
+            {% endif %}
+
+            {% if can_save_draft %}
+            <a href="#0" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+              Save as Draft
+            </a>
+            {% endif %}
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+  {# forgive me 🙈 #}
+  <script>
+  {% for k, v in request.session.individual_claims.items %}
+    {% if v.is_complete %}
+      document.getElementById("claim-details-{{ k }}").classList.toggle("govuk-visually-hidden")
+
+      document.getElementById(
+        "show-hide-div-{{ k }}"
+      ).innerHTML = '<a href="#0" id="show-hide-link-{{ k }}" class="govuk-link">Show Details</a>';
+
+      document.getElementById(
+        "show-hide-link-{{ k }}"
+      ).addEventListener(
+        'click',
+        function () {
+          if (document.getElementById("show-hide-link-{{ k }}").innerHTML === 'Show Details') {
+            document.getElementById("show-hide-link-{{ k }}").innerHTML = 'Hide Details'
+          } else {
+            document.getElementById("show-hide-link-{{ k }}").innerHTML = 'Show Details'
+          }
+          document.getElementById("claim-details-{{ k }}").classList.toggle("govuk-visually-hidden")
+        },
+        false
+      );
+    {% endif %}
+  {% endfor %}
+  </script>
+{% endblock %}

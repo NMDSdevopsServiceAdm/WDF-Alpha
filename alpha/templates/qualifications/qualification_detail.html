@@ -1,0 +1,87 @@
+{% extends "patterns/base_page.html" %}
+{% load static %}
+
+{% block title %}Training and Development - {{ object.qualification.qualification_title }}{% endblock %}
+
+{% block content %}
+    <a href="{% url 'qualification_list' %}" class="govuk-back-link">Back</a>
+    <h1 class="govuk-heading-xl">{{ object.qualification.qualification_title }}</h1>
+
+    <dl class="govuk-summary-list">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ object.qualification.qualification_title }}
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          {% if object.qualification.qualification_category == "Qualification" %}
+            Qualification number:
+          {% else %}
+            Claim code:
+          {% endif %}
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ object.qualification.qualification_code }}
+        </dd>
+      </div>
+      {% if object.qualification.awarding_body.name_human %}
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Awarding Organisation
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{ object.qualification.awarding_body.name_human }}
+          </dd>
+        </div>
+      {% endif %}
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Funding Value
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ object.funding_value_human }}
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Development Activity
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ object.qualification.qualification_category }}
+        </dd>
+      </div>
+      {% if object.qualification.qualification_type1 %}
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Type
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{ object.qualification.qualification_type1 }}
+          </dd>
+        </div>
+      {% endif %}
+      {% if object.qualification.level %}
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Level
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{ object.qualification.level }}
+          </dd>
+        </div>
+      {% endif %}
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Credits
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ object.qualification.num_credits }}
+        </dd>
+      </div>
+    </dl>
+
+{% endblock %}

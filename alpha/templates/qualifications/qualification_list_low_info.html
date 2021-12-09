@@ -1,0 +1,21 @@
+{% extends "qualifications/qualification_list_base.html" %}
+
+{% block qual_list_items %}
+  {% for qual in qualificationvalue_list %}
+    <li class="gem-c-document-list__item">
+      <a
+        class="gem-c-document-list__item-title govuk-link"
+        href="{% url 'qualification_detail' qual.id %}"
+      >
+        {{ qual.qualification.qualification_title }}
+        {% if qual.qualification.level %}- {{ qual.qualification.qualification_type2 }}{% endif %}
+      </a>
+      {% if qual.qualification.awarding_body.name_human %}
+        <br />
+        <span class="gem-c-document-list__item-context">
+          {{ qual.qualification.awarding_body.name_human }}
+        </span>
+      {% endif %}
+    </li>
+  {% endfor %}
+{% endblock %}

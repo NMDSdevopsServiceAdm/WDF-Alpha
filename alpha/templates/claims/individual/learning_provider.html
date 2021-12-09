@@ -1,0 +1,94 @@
+{% extends "patterns/base_page.html" %}
+{% load static %}
+
+{% block title %}Workforce Development Fund - Make a Claim{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="" method="post">
+          <label class="govuk-label" for="learning-provider">
+            <h1 class="govuk-heading-xl">
+              What organisation provided the training?
+            </h1>
+          </label>
+
+          <div class="govuk-form-group">
+            <div id="learning-provider-hint" class="govuk-hint">
+              If you can't find the organisation in the list, select "None of these".
+            </div>
+            <select class="govuk-select" id="learning-provider" name="learning-provider">
+              <option value="">Select...</option>
+              <option
+                value="n/a"
+                {% if request.session.previous_learning_provider_dropdown == "n/a" %}
+                  selected
+                {% endif %}
+              >
+                None of these
+              </option>
+              <option disabled>---</option>
+              {% for provider in learning_providers %}
+                <option
+                  value="{{ provider.id }}"
+                  {% if request.session.previous_learning_provider_dropdown == provider.id|stringformat:"i" %}
+                    selected
+                  {% endif %}
+                >
+                  {{ provider.provider }}
+                </option>
+              {% endfor %}
+            </select>
+            <div class="govuk-inset-text" id="other-please-specify">
+              <label class="govuk-label" for="other-learning-provider">
+                Please enter the name of the organisation that provided the training
+              </label>
+              <input
+                class="govuk-input govuk-input--width-20"
+                id="other-learning-provider"
+                name="other-learning-provider"
+                type="text"
+                value="{{ request.session.previous_learning_provider_freetext }}"
+              />
+            </div>
+          </div>
+
+          {% include 'claims/snippets/buttons.html' %}
+        </form>
+
+      </div>
+
+      {% include 'claims/snippets/sidebar.html' %}
+    </div>
+  </main>
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+  <script>
+    var handler = function() {
+      var val = document.getElementById("learning-provider").value;
+      if (val === '') {
+        document.getElementById("submit-button").disabled = true;
+      } else {
+        document.getElementById("submit-button").disabled = false;
+      }
+      if (val === 'n/a') {
+        document.getElementById("other-please-specify").style.display = '';
+        document.getElementById("other-learning-provider").required = true;
+      } else {
+        document.getElementById("other-please-specify").style.display = 'none';
+        document.getElementById("other-learning-provider").required = false;
+      }
+    }
+    handler();
+
+    document.getElementById(
+      "learning-provider"
+    ).addEventListener('change', handler, false);
+  </script>
+{% endblock %}
